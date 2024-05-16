@@ -1,14 +1,17 @@
 name: ci-sonarcloud
+
 on:
   pull_request:
     branches:
-      -develop
+      - develop  # Adicionado espaço necessário após o hífen
+
 jobs:
   run-ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: action/setup-go@v2
+      - name: Set up Go 1.18
+        uses: actions/setup-go@v2  # Corrigido para usar actions/setup-go
         with:
           go-version: 1.18
       - run: go test -coverageprofile=coverage.out
