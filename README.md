@@ -1,0 +1,1 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=GuilhermeFrick_FullCycleSonnarCloud&metric=coverage)](https://sonarcloud.io/summary/new_code?id=GuilhermeFrick_FullCycleSonnarCloud)
